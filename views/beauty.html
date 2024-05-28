@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belleza de la Naturaleza</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Belleza de la Naturaleza</h1>
+    </header>
+    <main>
+        <section class="content">
+            <h2>Galería de Imágenes</h2>
+            <div class="image-gallery">
+                <div class="image">
+                    <img src="belleza1.jpg" alt="Paisaje de montañas">
+                    <p>Explora la majestuosidad de las montañas.</p>
+                </div>
+                <div class="image">
+                    <img src="belleza2.jpg" alt="Atardecer en la playa">
+                    <p>Contempla la tranquilidad de un atardecer en la playa.</p>
+                </div>
+                <div class="image">
+                    <img src="belleza3.jpg" alt="Cascada en la selva">
+                    <p>Sumérgete en la exuberancia de la selva y sus cascadas.</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <h2>Comparte tu Experiencia</h2>
+            <p>¿Tienes una experiencia especial en la naturaleza que te gustaría compartir?</p>
+            <p>Completa el siguiente formulario y comparte tus historias con nosotros:</p>
+            <form action="submit.php" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Explora la Naturaleza</p>
+    </footer>
+</body>
+</html>
