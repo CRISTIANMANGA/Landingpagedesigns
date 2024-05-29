@@ -3,36 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vida Silvestre</title>
+    <title>Explora la Vida Silvestre</title>
     <link rel="stylesheet" href="wildlife.css">
+    <style>
+        /* Agregar estilos adicionales */
+        .animal {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .animal:hover {
+            transform: scale(1.05);
+        }
+
+        .animal img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .animal p {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            margin: 0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .animal:hover p {
+            opacity: 1;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Vida Silvestre</h1>
+        <h1>Explora la Vida Silvestre</h1>
     </header>
     <main>
         <section class="content">
-            <h2>Explora la Diversidad de la Vida Silvestre</h2>
-            <p>Descubre la belleza y la diversidad de la vida silvestre en su hábitat natural:</p>
-            <ul>
-                <li>Observa aves migratorias en su viaje anual</li>
-                <li>Maravíllate con la majestuosidad de los grandes felinos</li>
-                <li>Explora los arrecifes de coral y su colorida vida marina</li>
-                <li>Sumérgete en la jungla y observa animales exóticos</li>
-            </ul>
+            <h2>Descubre la Diversidad Animal</h2>
+            <p>Sumérgete en la belleza y la diversidad de la vida silvestre en su hábitat natural.</p>
             <div class="gallery">
-                <img src="wildlife1.jpg" alt="Aves Migratorias">
-                <img src="wildlife2.jpg" alt="León en la Sabana">
-                <img src="wildlife3.jpg" alt="Peces en un Arrecife de Coral">
-                <img src="wildlife4.jpg" alt="Tigre en la Jungla">
-                <!-- Agregar más imágenes -->
-                <img src="wildlife5.jpg" alt="Oso Panda en su hábitat">
-                <img src="wildlife6.jpg" alt="Elefantes en la Sabana">
+                <div class="animal">
+                    <img src="storage/img/011_The_lion_king_Tryggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg" alt="León">
+                    <p>León</p>
+                </div>
+                <div class="animal">
+                    <img src="storage/img/elefanteee.jpg" alt="Elefante">
+                    <p>Elefante</p>
+                </div>
+                <div class="animal">
+                    <img src="storage/img/jirafa.jpg" alt="Jirafa">
+                    <p>Jirafa</p>
+                </div>
+                <div class="animal">
+                    <img src="storage/img/tigre.jpg" alt="Tigre">
+                    <p>Tigre</p>
+                </div>
+                <div class="animal">
+                    <img src="storage/img/640px-TeTuatahianui.jpg" alt="Pájaro">
+                    <p>Pájaro</p>
+                </div>
+                <div class="animal">
+                    <img src="storage/img/osos.jpg" alt="Oso">
+                    <p>Oso</p>
+                </div>
             </div>
+        </section>
+        <section class="info">
+            <h2>Aprende más sobre la Vida Silvestre</h2>
+            <p>Explora nuestra sección de artículos y recursos para aprender más sobre los animales salvajes y sus hábitats.</p>
+            <a href="articles.html">Ver artículos</a>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Explora la Naturaleza</p>
+        <p>&copy; 2024 Explora la Vida Silvestre</p>
     </footer>
 </body>
 </html>
