@@ -1,0 +1,100 @@
+@import url(variables.css);
+
+@font-face {
+    font-family: "AvenirHeavy";
+    src: url(../storage/font/Avenir/AvenirLTStd-Black.otf);
+}
+@font-face {
+    font-family: "AvenirRoman";
+    src: url(../storage/font/Avenir/AvenirLTStd-Roman.otf);
+}
+
+:root {
+    --font-avenir-heavy: url('../storage/font/Avenir/AvenirLTStd-Black.otf');
+    --font-avenir-roman: url('../storage/font/Avenir/AvenirLTStd-Roman.otf');
+    --color-primary: #141414;
+    --color-secondary: #323232;
+    --color-tertiary: #969696;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-avenir-roman), sans-serif;
+}
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.item2 {
+    display: flex;
+    justify-content: center;
+}
+
+.center {
+    width: 80%;
+    text-align: center;
+}
+
+.img {
+    width: 100%;
+}
+
+#title {
+    font-family: var(--font-avenir-heavy), sans-serif;
+    font-size: 5vw;
+    color: var(--color-primary);
+}
+
+#header {
+    font-size: 2vw;
+    color: var(--color-secondary);
+    margin-top: 2vw;
+}
+
+.button {
+    transition: background-color 0.2s;
+    margin-top: 2vw;
+    border-radius: 1vw;
+    display: inline-block;
+    background-color: var(--color-secondary);
+    width: 12vw;
+    margin-bottom: 8vw;
+}
+.button:hover {
+    background-color: #6b3369;
+}
+
+#button-text {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2vw;
+    padding: 1vw;
+}
+
+.number {
+    font-size: 2.4vw;
+    color: var(--color-tertiary);
+}
+
+.content {
+    font-size: 1.6vw;
+    color: var(--color-secondary);
+}
